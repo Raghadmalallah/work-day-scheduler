@@ -2,30 +2,25 @@ var currentDate = moment().format(
   'dddd'); + " " + moment().format("Do MMM YYYY");
 var currentTime = moment().format('h:mm;dd a');
 
+var nineAm = $("#9am");
 
-// // Use Moment.js to format the following variables:
-// // 1. What is today's date in the following format: Jan 1st, 1999?
-// var today = moment();
-// $('#1a').text(today.format('MMM Do, YYYY'));
+var dateInterval = setInterval(function(){
+    if ("#currentDay").momentNow.format("dddd, MMMM Do YYYY") ++ ""
+     + momentNow.format("dddd");
+     $("currentDate").html(currentDate + "" + momentNow.format("hh:mm:ss A"));
+})1000;
 
-// // 2. What is the day of the week today?
-// var dayWeek = today.format('[Today is] dddd');
-// $('#2a').text(dayWeek);
 
-// // 3. Parse the following date, 11/3/2020, and convert it into the following format: Sunday, February 14th 2010, 3:25:50 pm.
-// var reformatDate = moment('11/3/20', 'MM-DD-YY').format(
-//   'dddd, MMMM Do YYYY, h:mm:ss a'
-// );
-// $('#3a').text(reformatDate);
-
-// // 4. I need to place my recycling bin on the curb on every odd week of the year for collection. Do I need to put out my recycling bin out this week?
-// var weekNum = today.format('w');
-// var takeOut;
-// // Check odd, then assign boolean
-// if (weekNum % 2) {
-//   takeOut = true;
-// } else {
-//   takeOut = false;
+// moment().format("dddd, MMMM Do YYYY,
+// var msgInterval = setInterval(function () {
+//     // If there are no more words left in the message
+//     if (words[wordCount] === undefined) {
+//       // Use `clearInterval()` to stop the timer
+//       clearInterval(msgInterval);
+//     } else {
+//       // Display one word of the message
+//       mainEl.textContent = words[wordCount];
+//       wordCount++;
+//     }
+//   }, 1000);
 // }
-
-// $('#4a').text(takeOut + ", because it's currently week " + weekNum);
