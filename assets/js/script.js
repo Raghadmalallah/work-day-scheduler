@@ -2,6 +2,7 @@ displayEvent() || [];
 
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
+
 const currentHour = moment().hour();
 var plannerInput = $(".row input[type=text]");
 
@@ -33,7 +34,7 @@ var keys = Object.keys(localStorage);
 keys.forEach(displayEvent);
 
 function displayEvent(item) {
-  $("")
+  $(`*[data-hour="${item}"]`).val(JSON.parse(localStorage.getItem(`${item}`)));
 }
 
 $("#clearSchedule").click(function() {
