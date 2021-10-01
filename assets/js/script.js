@@ -2,29 +2,44 @@ displayEvent() || [];
 
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
-savebtn.click(function ()) {
-  var event = preventDefault;
-  var hourValue = $(this).preventDefault().hourValue();
-  localStorage.setItem(hourValue, JSON.stringify(eventEntered));
-};
-
-var currentHour = moment().houre();
+const currentHour = moment().hour();
 var plannerInput = $(".row input[type=text]");
 
 $(plannerInput).each(function() {
+
 var inputNumber = parseInt($(this).attr("data-hour"));
-if (inputNumber =< plannerInput) {
+
+if (inputNumber < currentHour) {
   $(this).addClass("past")
 }
-else if (inputNumber == plannerInput) {
+else if (inputNumber == currentHour) {
   $(this).addClass("present")
 }
-else (inputNumber >= plannerInput) {
+else if (inputNumber > currentHour) {
   $(this).addClass("future")
 }
-}
-)
+});
 
+$(".savebtn").click(function() {
+   event.preventDefault();
+
+    var hourValue = $(this).attr("data-value")
+    var eventEntered = $(this).prev().val();
+
+    localStorage.setItem(hourValue, JSON.stringify(eventEntered));
+});
+
+var keys = Object.keys(localStorage);
+keys.forEach(displayEvent);
+
+function displayEvent(item) {
+  $("")
+}
+
+$("#clearSchedule").click(function() {
+  localStorage.clear();
+  window.location.assign("./index.html");
+})
 // Given a time block element
 
 // let currentHour = get the current hour
