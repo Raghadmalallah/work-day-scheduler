@@ -3,3 +3,4 @@ AS AN employee with a busy schedule I WANT to add important events to a daily pl
 
 
 ![The web page shows the scheduler index page.](https://github.com/Raghadmalallah/work-day-scheduler/blob/be8a2d91bfddb8e7a2fef357cc5809475308dfee/assets/image/work-day-scheduler_index.png)
+[https://raghadmalallah.github.io/work-day-scheduler/](https://raghadmalallah.github.io/work-day-scheduler/)
