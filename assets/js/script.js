@@ -21,7 +21,7 @@ else if (inputNumber > currentHour) {
 });
 
 $(".savebtn").click(function() {
-   event.preventDefault();
+   preventDefault();
 
     var hourValue = $(this).attr("data-value")
     var eventEntered = $(this).prev().val();
@@ -40,22 +40,3 @@ $("#clearSchedule").click(function() {
   localStorage.clear();
   window.location.assign("./index.html");
 })
-// Given a time block element
-
-// let currentHour = get the current hour
-// let blockHour = get time block hour
-
-// IF currentHour < blockHour
-//    add "future" class to block element
-// ELSE IF currentHour > blockHour
-//    add "past" class to block element
-// ELSE
-//    add "present" class to block element
-
-
-
-
-// currentHour = 9
-// blockHour = 9
-
-// result adds "past" class to time block to make gray

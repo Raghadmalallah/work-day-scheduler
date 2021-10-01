@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+ 
 }
 
 textarea {
@@ -31,21 +32,21 @@ textarea:focus {
 
 .time-block {
   text-align: center;
-  height: 100%;
-  border-radius: 15px;
-  width: 10%;
+ border-radius: 15px;
 }
 
 .row {
-  white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+   white-space: pre-wrap;
 }
+
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed #88898c;
+
 }
 
 .past {
@@ -73,12 +74,18 @@ textarea:focus {
   width: 10%;
 }
 
-i {
-  height: 100%;
-  text-align: center;
-  width: 100%;
-}
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+button {
+  margin: 0;
+  color: #000000;
+}
+
+input {
+  height: 80%;
+  padding: 10px;
+  width: 50%;
+}
+
