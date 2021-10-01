@@ -14,7 +14,13 @@ var plannerInput = $(".row input[type=text]");
 $(plannerInput).each(function() {
 var inputNumber = parseInt($(this).attr("data-hour"));
 if (inputNumber =< plannerInput) {
-  $(this).addClass('past')
+  $(this).addClass("past")
+}
+else if (inputNumber == plannerInput) {
+  $(this).addClass("present")
+}
+else (inputNumber >= plannerInput) {
+  $(this).addClass("future")
 }
 }
 )
