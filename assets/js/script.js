@@ -2,13 +2,7 @@
 //   'dddd'); + " " + moment().format("Do MMM YYYY");
 // var currentTime = moment().format('h:mm;dd a');
 
-// var nineAm = $("#9am");
 
-// var dateInterval = setInterval(function(){
-//  var timeNow = moment();
-//  $("currentDay").html(timeNow.format("YYYY MMMM DD") + '' + timeNow.format('dddd').substring(0,3).toUpperCase());
-//  $('#currentDay').html(currentDate + " " +timeNow.format('hh:mm:ss A'));
-// },100);
 
 savebtn.click(function ()) {
   var event = preventDefault;
